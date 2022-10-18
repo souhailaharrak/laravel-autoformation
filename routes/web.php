@@ -17,7 +17,10 @@ Route::get('/', function () {
     return view('welcome');
     
 });
-Route::get('/', function () {
-    return view('demo1');
-    
-});
+
+Route::get('/poste/{id}/{lasteName?}','App\Http\Controllers\HomeConteroller@blog')->name('route_name');
+
+
+Route::get('/home',"App\Http\Controllers\HomeConteroller@home")->name('home');
+
+ 
