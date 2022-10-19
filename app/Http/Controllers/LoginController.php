@@ -11,8 +11,11 @@ class LoginController extends Controller
         return view('login');
     }
     
-    public function loginSumbit(){
+    public function loginSumbit( Request $request){
 
-        return "form Sumbit";
+        // return $request->All();
+        $email= $request->input('email');
+        $passwer= $request->input('passwerd');
+  return    'Passwerd  ' .$passwer  .  " " . $email . " " .'email';
     }
 }

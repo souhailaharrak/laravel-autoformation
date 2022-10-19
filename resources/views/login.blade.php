@@ -15,11 +15,11 @@
             <form action="{{route('Login')}}" method="POST">
                 @csrf
                 <div class="mb-3 col-4 ">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="email" >
+                  <label for="email" class="form-label">Email </label>
+                  <input type="email" class="form-control" id="email" name="email" >
                 </div>
                 <div class="mb-3">
-                  <label for="passwer" class="form-label">Password</label>
+                  <label for="passwerd" class="form-label">Password</label>
                   <input type="password" class="form-control" id="passwerd" name="passwerd">
                 </div>
              
