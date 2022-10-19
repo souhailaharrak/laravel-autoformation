@@ -1,5 +1,6 @@
 <?php
 
+namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,7 +21,8 @@ Route::get('/', function () {
 
 Route::get('/poste/{id}/{lasteName?}','App\Http\Controllers\HomeConteroller@blog')->name('route_name');
 
+Route::get('/User',\App\Http\Controllers\UserController::class);
 
-Route::get('/home',"App\Http\Controllers\HomeConteroller@home")->name('home');
+Route::get('/',"App\Http\Controllers\HomeConteroller@home")->name('home');
 
  
